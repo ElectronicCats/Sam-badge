@@ -1,0 +1,172 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sam`s Badge"
+Date "2020-02-06"
+Rev "0.1"
+Comp "Electronic Cats"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Andres Sabas"
+$EndDescr
+$Comp
+L Device:LED_RGBA D?
+U 1 1 5E3CB5F4
+P 8190 1725
+F 0 "D?" H 8190 2222 50  0000 C CNN
+F 1 "LED_RGBA" H 8190 2131 50  0000 C CNN
+F 2 "" H 8190 1675 50  0001 C CNN
+F 3 "~" H 8190 1675 50  0001 C CNN
+	1    8190 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5E3CF501
+P 1430 3095
+F 0 "BT?" H 1548 3191 50  0000 L CNN
+F 1 "Battery_Cell" H 1548 3100 50  0000 L CNN
+F 2 "" V 1430 3155 50  0001 C CNN
+F 3 "~" V 1430 3155 50  0001 C CNN
+	1    1430 3095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7990 1525 7840 1525
+Wire Wire Line
+	7990 1725 7845 1725
+Wire Wire Line
+	7990 1925 7855 1925
+Wire Wire Line
+	8390 1725 8665 1725
+Wire Wire Line
+	8665 1725 8665 1630
+Text Label 7840 1525 0    50   ~ 0
+R1
+Text Label 7845 1725 0    50   ~ 0
+G1
+Text Label 7855 1925 0    50   ~ 0
+B1
+$Comp
+L Device:LED_RGBA D?
+U 1 1 5E3D361F
+P 8205 2770
+F 0 "D?" H 8205 3267 50  0000 C CNN
+F 1 "LED_RGBA" H 8205 3176 50  0000 C CNN
+F 2 "" H 8205 2720 50  0001 C CNN
+F 3 "~" H 8205 2720 50  0001 C CNN
+	1    8205 2770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8005 2570 7855 2570
+Wire Wire Line
+	8005 2770 7860 2770
+Wire Wire Line
+	8005 2970 7870 2970
+Wire Wire Line
+	8405 2770 8680 2770
+Wire Wire Line
+	8680 2770 8680 2675
+Text Label 7855 2570 0    50   ~ 0
+R1
+Text Label 7860 2770 0    50   ~ 0
+G1
+Text Label 7870 2970 0    50   ~ 0
+B1
+$Comp
+L Device:LED_RGBA D?
+U 1 1 5E3D490E
+P 8205 3735
+F 0 "D?" H 8205 4232 50  0000 C CNN
+F 1 "LED_RGBA" H 8205 4141 50  0000 C CNN
+F 2 "" H 8205 3685 50  0001 C CNN
+F 3 "~" H 8205 3685 50  0001 C CNN
+	1    8205 3735
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8005 3535 7855 3535
+Wire Wire Line
+	8005 3735 7860 3735
+Wire Wire Line
+	8005 3935 7870 3935
+Wire Wire Line
+	8405 3735 8680 3735
+Wire Wire Line
+	8680 3735 8680 3640
+Text Label 7855 3535 0    50   ~ 0
+R1
+Text Label 7860 3735 0    50   ~ 0
+G1
+Text Label 7870 3935 0    50   ~ 0
+B1
+$Comp
+L Device:LED_RGBA D?
+U 1 1 5E3D63B2
+P 8200 4705
+F 0 "D?" H 8200 5202 50  0000 C CNN
+F 1 "LED_RGBA" H 8200 5111 50  0000 C CNN
+F 2 "" H 8200 4655 50  0001 C CNN
+F 3 "~" H 8200 4655 50  0001 C CNN
+	1    8200 4705
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4505 7850 4505
+Wire Wire Line
+	8000 4705 7855 4705
+Wire Wire Line
+	8000 4905 7865 4905
+Wire Wire Line
+	8400 4705 8675 4705
+Wire Wire Line
+	8675 4705 8675 4610
+Text Label 7850 4505 0    50   ~ 0
+R1
+Text Label 7855 4705 0    50   ~ 0
+G1
+Text Label 7865 4905 0    50   ~ 0
+B1
+Wire Wire Line
+	1430 2895 1430 2805
+Wire Wire Line
+	1430 3195 1430 3280
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E3D9E08
+P 1430 2805
+F 0 "#PWR?" H 1430 2655 50  0001 C CNN
+F 1 "+BATT" H 1445 2978 50  0000 C CNN
+F 2 "" H 1430 2805 50  0001 C CNN
+F 3 "" H 1430 2805 50  0001 C CNN
+	1    1430 2805
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E3DA5A2
+P 1430 3280
+F 0 "#PWR?" H 1430 3030 50  0001 C CNN
+F 1 "GND" H 1435 3107 50  0000 C CNN
+F 2 "" H 1430 3280 50  0001 C CNN
+F 3 "" H 1430 3280 50  0001 C CNN
+	1    1430 3280
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM8:STM8S003F3P U?
+U 1 1 5E3DBFB6
+P 3570 3170
+F 0 "U?" H 3320 4110 50  0000 C CNN
+F 1 "STM8S003F3P" H 3885 4105 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3620 4270 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 3520 2770 50  0001 C CNN
+	1    3570 3170
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
