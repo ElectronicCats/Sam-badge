@@ -1,4 +1,9 @@
 EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:74xx
+LIBS:audio
+LIBS:interface
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -73,11 +78,11 @@ Wire Wire Line
 Wire Wire Line
 	8680 2770 8680 2675
 Text Label 7855 2570 0    50   ~ 0
-R1
+R2
 Text Label 7860 2770 0    50   ~ 0
-G1
+G2
 Text Label 7870 2970 0    50   ~ 0
-B1
+B3
 $Comp
 L Device:LED_RGBA D?
 U 1 1 5E3D490E
@@ -100,11 +105,11 @@ Wire Wire Line
 Wire Wire Line
 	8680 3735 8680 3640
 Text Label 7855 3535 0    50   ~ 0
-R1
+R3
 Text Label 7860 3735 0    50   ~ 0
-G1
+G3
 Text Label 7870 3935 0    50   ~ 0
-B1
+B3
 $Comp
 L Device:LED_RGBA D?
 U 1 1 5E3D63B2
@@ -127,11 +132,11 @@ Wire Wire Line
 Wire Wire Line
 	8675 4705 8675 4610
 Text Label 7850 4505 0    50   ~ 0
-R1
+R4
 Text Label 7855 4705 0    50   ~ 0
-G1
+G4
 Text Label 7865 4905 0    50   ~ 0
-B1
+B4
 Wire Wire Line
 	1430 2895 1430 2805
 Wire Wire Line
@@ -148,6 +153,28 @@ F 3 "" H 1430 2805 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L MCU_ST_STM8:STM8S003F3P U?
+U 1 1 5E3DBFB6
+P 3570 3170
+F 0 "U?" H 3320 4110 50  0000 C CNN
+F 1 "STM8S003F3P" H 3885 4105 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3620 4270 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 3520 2770 50  0001 C CNN
+	1    3570 3170
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E45D8AC
+P 4875 3075
+F 0 "C?" H 4990 3121 50  0000 L CNN
+F 1 "C" H 4990 3030 50  0000 L CNN
+F 2 "" H 4913 2925 50  0001 C CNN
+F 3 "~" H 4875 3075 50  0001 C CNN
+	1    4875 3075
+	1    0    0    -1  
+$EndComp
+$Comp
 L power:GND #PWR?
 U 1 1 5E3DA5A2
 P 1430 3280
@@ -159,14 +186,133 @@ F 3 "" H 1430 3280 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_ST_STM8:STM8S003F3P U?
-U 1 1 5E3DBFB6
-P 3570 3170
-F 0 "U?" H 3320 4110 50  0000 C CNN
-F 1 "STM8S003F3P" H 3885 4105 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 3620 4270 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 3520 2770 50  0001 C CNN
-	1    3570 3170
+L power:GND #PWR?
+U 1 1 5E45DFCD
+P 4875 3375
+F 0 "#PWR?" H 4875 3125 50  0001 C CNN
+F 1 "GND" H 4880 3202 50  0000 C CNN
+F 2 "" H 4875 3375 50  0001 C CNN
+F 3 "" H 4875 3375 50  0001 C CNN
+	1    4875 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E45E9D8
+P 4875 2800
+F 0 "#PWR?" H 4875 2650 50  0001 C CNN
+F 1 "+3.3V" H 4890 2973 50  0000 C CNN
+F 2 "" H 4875 2800 50  0001 C CNN
+F 3 "" H 4875 2800 50  0001 C CNN
+	1    4875 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 2925 4875 2800
+Wire Wire Line
+	4875 3375 4875 3225
+$Comp
+L power:GND #PWR?
+U 1 1 5E45FD96
+P 3570 4250
+F 0 "#PWR?" H 3570 4000 50  0001 C CNN
+F 1 "GND" H 3575 4077 50  0000 C CNN
+F 2 "" H 3570 4250 50  0001 C CNN
+F 3 "" H 3570 4250 50  0001 C CNN
+	1    3570 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3570 4250 3570 4170
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E462D8E
+P 3570 2050
+F 0 "#PWR?" H 3570 1900 50  0001 C CNN
+F 1 "+3.3V" H 3585 2223 50  0000 C CNN
+F 2 "" H 3570 2050 50  0001 C CNN
+F 3 "" H 3570 2050 50  0001 C CNN
+	1    3570 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3570 2050 3570 2170
+Text Label 2910 2470 0    50   ~ 0
+R1
+Wire Wire Line
+	2910 2470 2970 2470
+Text Label 2910 2570 0    50   ~ 0
+G1
+Wire Wire Line
+	2910 2570 2970 2570
+Text Label 2900 2670 0    50   ~ 0
+B1
+Wire Wire Line
+	2900 2670 2970 2670
+Text Label 2880 2870 0    50   ~ 0
+R2
+Wire Wire Line
+	2880 2870 2970 2870
+Text Label 2890 2970 0    50   ~ 0
+G2
+Wire Wire Line
+	2970 2970 2890 2970
+Text Label 2880 3170 0    50   ~ 0
+B2
+Wire Wire Line
+	2970 3170 2880 3170
+Text Label 2880 3270 0    50   ~ 0
+R3
+Text Label 2880 3370 0    50   ~ 0
+G3
+Text Label 2880 3470 0    50   ~ 0
+B3
+Text Label 2880 3570 0    50   ~ 0
+R4
+Text Label 4230 2870 0    50   ~ 0
+G4
+Text Label 4240 2970 0    50   ~ 0
+B4
+Wire Wire Line
+	2880 3270 2970 3270
+Wire Wire Line
+	2970 3370 2880 3370
+Wire Wire Line
+	2880 3470 2970 3470
+Wire Wire Line
+	2970 3570 2880 3570
+Wire Wire Line
+	4240 2970 4170 2970
+Wire Wire Line
+	4230 2870 4170 2870
+Text Label 2890 3770 0    50   ~ 0
+RST
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E477841
+P 2590 3770
+F 0 "SW?" H 2590 4055 50  0000 C CNN
+F 1 "SW_Push" H 2590 3964 50  0000 C CNN
+F 2 "" H 2590 3970 50  0001 C CNN
+F 3 "~" H 2590 3970 50  0001 C CNN
+	1    2590 3770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2790 3770 2970 3770
+Wire Wire Line
+	2390 3770 2310 3770
+Wire Wire Line
+	2310 3770 2310 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5E47A567
+P 2310 3950
+F 0 "#PWR?" H 2310 3700 50  0001 C CNN
+F 1 "GND" H 2315 3777 50  0000 C CNN
+F 2 "" H 2310 3950 50  0001 C CNN
+F 3 "" H 2310 3950 50  0001 C CNN
+	1    2310 3950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
