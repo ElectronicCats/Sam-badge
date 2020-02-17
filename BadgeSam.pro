@@ -1,5 +1,5 @@
 
-update=2020 February 17, Monday 16:33:35
+update=2020 February 17, Monday 16:42:54
 version=1
 last_client=kicad
 [cvpcb]
@@ -247,7 +247,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=vcc
 Clearance=0.2
-TrackWidth=0.3
+TrackWidth=0.5
 ViaDiameter=0.6
 ViaDrill=0.4
 uViaDiameter=0.3
