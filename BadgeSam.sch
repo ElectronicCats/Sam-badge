@@ -15,18 +15,6 @@ Comment3 "Eduardo Contreras"
 Comment4 "Andres Sabas"
 $EndDescr
 $Comp
-L Device:LED_RGBA D1
-U 1 1 5E3CB5F4
-P 8190 1725
-F 0 "D1" H 8190 2222 50  0000 C CNN
-F 1 "LED_RGBA" H 8190 2131 50  0000 C CNN
-F 2 "BadgeSam:LED_155124M173200" H 8190 1675 50  0001 C CNN
-F 3 "~" H 8190 1675 50  0001 C CNN
-F 4 "155124M173200A" H 8190 1725 50  0001 C CNN "manf#"
-	1    8190 1725
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Battery_Cell BT1
 U 1 1 5E3CF501
 P 1210 1980
@@ -53,18 +41,6 @@ Text Label 7845 1725 0    50   ~ 0
 G1
 Text Label 7855 1925 0    50   ~ 0
 B1
-$Comp
-L Device:LED_RGBA D3
-U 1 1 5E3D361F
-P 8205 2770
-F 0 "D3" H 8205 3267 50  0000 C CNN
-F 1 "LED_RGBA" H 8205 3176 50  0000 C CNN
-F 2 "BadgeSam:LED_155124M173200" H 8205 2720 50  0001 C CNN
-F 3 "~" H 8205 2720 50  0001 C CNN
-F 4 "155124M173200A" H 8205 2770 50  0001 C CNN "manf#"
-	1    8205 2770
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8005 2570 7855 2570
 Wire Wire Line
@@ -81,18 +57,6 @@ Text Label 7860 2770 0    50   ~ 0
 G2
 Text Label 7870 2970 0    50   ~ 0
 B3
-$Comp
-L Device:LED_RGBA D4
-U 1 1 5E3D490E
-P 8205 3735
-F 0 "D4" H 8205 4232 50  0000 C CNN
-F 1 "LED_RGBA" H 8205 4141 50  0000 C CNN
-F 2 "BadgeSam:LED_155124M173200" H 8205 3685 50  0001 C CNN
-F 3 "~" H 8205 3685 50  0001 C CNN
-F 4 "155124M173200A" H 8205 3735 50  0001 C CNN "manf#"
-	1    8205 3735
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8005 3535 7855 3535
 Wire Wire Line
@@ -109,18 +73,6 @@ Text Label 7860 3735 0    50   ~ 0
 G3
 Text Label 7870 3935 0    50   ~ 0
 B3
-$Comp
-L Device:LED_RGBA D2
-U 1 1 5E3D63B2
-P 8200 4705
-F 0 "D2" H 8200 5202 50  0000 C CNN
-F 1 "LED_RGBA" H 8200 5111 50  0000 C CNN
-F 2 "BadgeSam:LED_155124M173200" H 8200 4655 50  0001 C CNN
-F 3 "~" H 8200 4655 50  0001 C CNN
-F 4 "155124M173200A" H 8200 4705 50  0001 C CNN "manf#"
-	1    8200 4705
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8000 4505 7850 4505
 Wire Wire Line
@@ -150,17 +102,6 @@ F 1 "+BATT" H 1225 1863 50  0000 C CNN
 F 2 "" H 1210 1690 50  0001 C CNN
 F 3 "" H 1210 1690 50  0001 C CNN
 	1    1210 1690
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_ST_STM8:STM8S003F3P U1
-U 1 1 5E3DBFB6
-P 5000 2195
-F 0 "U1" H 4750 3135 50  0000 C CNN
-F 1 "STM8S003F3P" H 5315 3130 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5050 3295 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 4950 1795 50  0001 C CNN
-	1    5000 2195
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -217,23 +158,15 @@ Wire Wire Line
 	5000 1075 5000 1195
 Text Label 4330 1695 2    50   ~ 0
 R1
-Wire Wire Line
-	4340 1495 4400 1495
 Text Label 4340 1495 2    50   ~ 0
 G1
-Wire Wire Line
-	4340 1595 4400 1595
 Text Label 4340 1595 2    50   ~ 0
 B1
-Wire Wire Line
-	4330 1695 4400 1695
 Text Label 4310 2395 2    50   ~ 0
 R2
 Text Label 4330 1895 2    50   ~ 0
 G2
-Wire Wire Line
-	4400 2195 4310 2195
-Text Label 4045 2290 2    50   ~ 0
+Text Label 4310 2295 2    50   ~ 0
 G3
 Text Label 5670 1995 0    50   ~ 0
 B3
@@ -243,14 +176,6 @@ Text Label 5670 2195 0    50   ~ 0
 G4
 Text Label 5670 2295 0    50   ~ 0
 B4
-Wire Wire Line
-	4310 2295 4400 2295
-Wire Wire Line
-	4400 2395 4310 2395
-Wire Wire Line
-	4310 2495 4400 2495
-Wire Wire Line
-	4400 2595 4310 2595
 Wire Wire Line
 	5670 1995 5600 1995
 $Comp
@@ -287,8 +212,6 @@ F 3 "~" H 4345 3045 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2895 4345 2895
-Wire Wire Line
 	4345 2895 4345 2945
 Wire Wire Line
 	4345 3145 4345 3225
@@ -316,8 +239,6 @@ F 3 "~" H 3360 1215 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3360 1115 3360 1070
-Wire Wire Line
-	4400 2795 4330 2795
 Text Label 4330 2795 2    50   ~ 0
 RST
 Text Label 3520 1375 0    50   ~ 0
@@ -402,13 +323,9 @@ Wire Wire Line
 	5670 2195 5600 2195
 Wire Wire Line
 	5600 1895 5670 1895
-Wire Wire Line
-	4400 1895 4330 1895
-Wire Wire Line
-	4330 1995 4400 1995
-Text Label 3840 2525 2    50   ~ 0
+Text Label 4310 2495 2    50   ~ 0
 PC6
-Text Label 3775 2735 2    50   ~ 0
+Text Label 4310 2595 2    50   ~ 0
 PC7
 Wire Wire Line
 	3360 1840 3360 2035
@@ -423,4 +340,93 @@ Text Notes 5200 3155 0    50   ~ 0
 PD1 has SWIM interface
 Text Label 5670 1895 0    50   ~ 0
 SWIM
+$Comp
+L Device:LED_ARGB D3
+U 1 1 5E4E5EE2
+P 8205 2770
+F 0 "D3" H 8205 3267 50  0000 C CNN
+F 1 "LED_ARGB" H 8205 3176 50  0000 C CNN
+F 2 "BadgeSam:156120M173000" H 8205 2720 50  0001 C CNN
+F 3 "~" H 8205 2720 50  0001 C CNN
+	1    8205 2770
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ARGB D4
+U 1 1 5E4DD52A
+P 8205 3735
+F 0 "D4" H 8205 4232 50  0000 C CNN
+F 1 "LED_ARGB" H 8205 4141 50  0000 C CNN
+F 2 "BadgeSam:156120M173000" H 8205 3685 50  0001 C CNN
+F 3 "~" H 8205 3685 50  0001 C CNN
+	1    8205 3735
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ARGB D2
+U 1 1 5E4DE527
+P 8200 4705
+F 0 "D2" H 8200 5202 50  0000 C CNN
+F 1 "LED_ARGB" H 8200 5111 50  0000 C CNN
+F 2 "BadgeSam:156120M173000" H 8200 4655 50  0001 C CNN
+F 3 "~" H 8200 4655 50  0001 C CNN
+	1    8200 4705
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ARGB D1
+U 1 1 5E4DF060
+P 8190 1725
+F 0 "D1" H 8190 2222 50  0000 C CNN
+F 1 "LED_ARGB" H 8190 2131 50  0000 C CNN
+F 2 "BadgeSam:156120M173000" H 8190 1675 50  0001 C CNN
+F 3 "~" H 8190 1675 50  0001 C CNN
+	1    8190 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR01
+U 1 1 5E4EFB6E
+P 8675 4610
+F 0 "#PWR01" H 8675 4460 50  0001 C CNN
+F 1 "+BATT" H 8690 4783 50  0000 C CNN
+F 2 "" H 8675 4610 50  0001 C CNN
+F 3 "" H 8675 4610 50  0001 C CNN
+	1    8675 4610
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4400 2195
+Wire Wire Line
+	4400 2595 4310 2595
+Wire Wire Line
+	4310 2495 4400 2495
+Wire Wire Line
+	4400 2395 4310 2395
+Wire Wire Line
+	4310 2295 4400 2295
+Wire Wire Line
+	4400 1895 4330 1895
+Wire Wire Line
+	4330 1995 4400 1995
+Wire Wire Line
+	4330 1695 4400 1695
+Wire Wire Line
+	4400 2895 4345 2895
+Wire Wire Line
+	4340 1595 4400 1595
+Wire Wire Line
+	4340 1495 4400 1495
+Wire Wire Line
+	4400 2795 4330 2795
+$Comp
+L MCU_ST_STM8:STM8S003F3P U1
+U 1 1 5E3DBFB6
+P 5000 2195
+F 0 "U1" H 4750 3135 50  0000 C CNN
+F 1 "STM8S003F3P" H 5315 3130 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5050 3295 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 4950 1795 50  0001 C CNN
+	1    5000 2195
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
