@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:BadgeSam-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -156,25 +155,21 @@ Wire Wire Line
 	5000 3275 5000 3195
 Wire Wire Line
 	5000 1075 5000 1195
-Text Label 4330 1695 2    50   ~ 0
-R1
 Text Label 4340 1495 2    50   ~ 0
-G1
-Text Label 4340 1595 2    50   ~ 0
-B1
-Text Label 4310 2395 2    50   ~ 0
+R1
+Text Label 4310 2195 2    50   ~ 0
 R2
-Text Label 4330 1895 2    50   ~ 0
-G2
 Text Label 4310 2295 2    50   ~ 0
-G3
+G2
 Text Label 5670 1995 0    50   ~ 0
+G3
+Text Label 4310 2595 2    50   ~ 0
 B3
-Text Label 5670 2395 0    50   ~ 0
+Text Label 4310 2495 2    50   ~ 0
 R4
-Text Label 5670 2195 0    50   ~ 0
-G4
 Text Label 5670 2295 0    50   ~ 0
+G4
+Text Label 5670 2195 0    50   ~ 0
 B4
 Wire Wire Line
 	5670 1995 5600 1995
@@ -311,7 +306,7 @@ F 3 "" H 8680 3640 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5670 2095 5600 2095
-Text Label 4330 1995 2    50   ~ 0
+Text Label 4310 2395 2    50   ~ 0
 B2
 Text Label 5670 2095 0    50   ~ 0
 R3
@@ -391,17 +386,10 @@ F 3 "" H 8675 4610 50  0001 C CNN
 	1    8675 4610
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4400 2195
 Wire Wire Line
 	4400 2395 4310 2395
 Wire Wire Line
 	4310 2295 4400 2295
-Wire Wire Line
-	4400 1895 4330 1895
-Wire Wire Line
-	4330 1995 4400 1995
-Wire Wire Line
-	4330 1695 4400 1695
 Wire Wire Line
 	4400 2895 4345 2895
 Wire Wire Line
@@ -470,6 +458,17 @@ Wire Wire Line
 	2675 3730 2675 3705
 Wire Wire Line
 	2675 3730 3055 3730
-NoConn ~ 4400 2495
-NoConn ~ 4400 2595
+Wire Wire Line
+	4310 2595 4400 2595
+Text Label 5670 2395 0    50   ~ 0
+B1
+Text Label 4340 1595 2    50   ~ 0
+G1
+Wire Wire Line
+	4400 2495 4310 2495
+Wire Wire Line
+	4400 2195 4310 2195
+NoConn ~ 4400 1895
+NoConn ~ 4400 1995
+NoConn ~ 4400 1695
 $EndSCHEMATC
