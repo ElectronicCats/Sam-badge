@@ -56,7 +56,7 @@ R2
 Text Label 7860 2770 0    50   ~ 0
 G2
 Text Label 7870 2970 0    50   ~ 0
-B3
+B2
 Wire Wire Line
 	8005 3535 7855 3535
 Wire Wire Line
@@ -323,10 +323,6 @@ Wire Wire Line
 	5670 2195 5600 2195
 Wire Wire Line
 	5600 1895 5670 1895
-Text Label 4310 2495 2    50   ~ 0
-PC6
-Text Label 4310 2595 2    50   ~ 0
-PC7
 Wire Wire Line
 	3360 1840 3360 2035
 Wire Wire Line
@@ -397,10 +393,6 @@ F 3 "" H 8675 4610 50  0001 C CNN
 $EndComp
 NoConn ~ 4400 2195
 Wire Wire Line
-	4400 2595 4310 2595
-Wire Wire Line
-	4310 2495 4400 2495
-Wire Wire Line
 	4400 2395 4310 2395
 Wire Wire Line
 	4310 2295 4400 2295
@@ -429,4 +421,55 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5000 2195
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5E50F491
+P 3255 3530
+F 0 "J1" H 3283 3506 50  0000 L CNN
+F 1 "PROG" H 3283 3415 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3255 3530 50  0001 C CNN
+F 3 "~" H 3255 3530 50  0001 C CNN
+	1    3255 3530
+	1    0    0    -1  
+$EndComp
+Text Label 2925 3430 0    50   ~ 0
+RST
+Text Label 2900 3630 0    50   ~ 0
+SWIM
+$Comp
+L power:+BATT #PWR02
+U 1 1 5E511BE3
+P 2675 3705
+F 0 "#PWR02" H 2675 3555 50  0001 C CNN
+F 1 "+BATT" H 2690 3878 50  0000 C CNN
+F 2 "" H 2675 3705 50  0001 C CNN
+F 3 "" H 2675 3705 50  0001 C CNN
+	1    2675 3705
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3055 3630 2900 3630
+Wire Wire Line
+	3055 3430 2925 3430
+$Comp
+L power:GND #PWR03
+U 1 1 5E5173CA
+P 2845 3820
+F 0 "#PWR03" H 2845 3570 50  0001 C CNN
+F 1 "GND" H 2850 3647 50  0000 C CNN
+F 2 "" H 2845 3820 50  0001 C CNN
+F 3 "" H 2845 3820 50  0001 C CNN
+	1    2845 3820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2845 3820 2845 3530
+Wire Wire Line
+	2845 3530 3055 3530
+Wire Wire Line
+	2675 3730 2675 3705
+Wire Wire Line
+	2675 3730 3055 3730
+NoConn ~ 4400 2495
+NoConn ~ 4400 2595
 $EndSCHEMATC
