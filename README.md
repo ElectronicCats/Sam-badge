@@ -35,13 +35,13 @@ Para más detalles, esquemáticos y firmware puedes consultar en nuestro reposit
 
 ### Este kit contiene:
 
-1 x Placa PCB Sam Durmiendo
-2 x LED
-1 x Botón
-1 x Soporte de batería CR2032
-NO INCLUYE BATERÍAS (batería CR2032)
+- 1 x Placa PCB Sam Durmiendo
+- 2 x LED
+- 1 x Botón
+- 1 x Soporte de batería CR2032
+- NO INCLUYE BATERÍAS (batería CR2032)
 
-El Premio
+## El Premio
 Si eres uno de los 10 primeros participantes en subir a redes sociales tu video o fotos y nos etiquetas, te enviaremos un paquete de souvenirs de Wurth hasta las puertas de tu casa completamente gratis.
 
 El **09 de Julio del 2020** anunciaremos durante la transmisión de Iron Land @ home a los ganadores del concurso en vivo y mostraremos su trabajo.
