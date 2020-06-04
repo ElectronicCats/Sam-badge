@@ -36,8 +36,11 @@ Para más detalles, esquemáticos y firmware puedes consultar en nuestro reposit
 ### Este kit contiene:
 
 - 1 x Placa PCB Sam Durmiendo
-- 2 x LED
+- 4 x LED RGB
 - 1 x Botón
+- 1 x Resistencia 10K
+- 1 x Capacitor 1uF
+- 1 x Capacitor 0.1uF
 - 1 x Soporte de batería CR2032
 - NO INCLUYE BATERÍAS (batería CR2032)
 
