@@ -49,6 +49,10 @@ Si eres uno de los 10 primeros participantes en subir a redes sociales tu video 
 
 El **09 de Julio del 2020** anunciaremos durante la transmisión de Iron Land @ home a los ganadores del concurso en vivo y mostraremos su trabajo.
 
+## Video de Ensamblado
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UkvUJHmSHjA/0.jpg)](https://www.youtube.com/watch?v=UkvUJHmSHjA)
+
 
 ## License
 
