@@ -1,7 +1,7 @@
 # Badge Sam Dulces Sueños
 ## Reto de soldadura 
 
-<a href="https://electroniccats.com/store">
+<a href="https://electroniccats.com/store/badge-sam-dulces-suenos/">
   <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
 </a>
 
