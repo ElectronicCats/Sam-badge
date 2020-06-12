@@ -1,0 +1,13 @@
+-muwx
+-i blink.ihx
+-Y
+-b HOME = 0x8000
+-b DATA = 0x0001
+-b SSEG = 0xffffffff
+-k /Users/eduardocontreras/sdcc-4.0.0/bin/../share/sdcc/lib/stm8
+-k /usr/local/share/sdcc/lib/stm8
+-l stm8
+-l stm8
+blink.rel
+
+-e
