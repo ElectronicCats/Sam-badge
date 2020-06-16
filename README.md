@@ -36,6 +36,7 @@ Para más detalles, esquemáticos y firmware puedes consultar en nuestro reposit
 ### Este kit contiene:
 
 - 1 x Placa PCB Sam Durmiendo
+- 1 x STM8S003F3P
 - 4 x LED RGB
 - 1 x Botón
 - 1 x Resistencia 10K
