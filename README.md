@@ -37,7 +37,7 @@ Para más detalles, esquemáticos y firmware puedes consultar en nuestro reposit
 
 - 1 x Placa PCB Sam Durmiendo
 - 1 x STM8S003F3P
-- 4 x LED RGB
+- 4 x [LED RGB 156120M173000](https://www.mouser.mx/datasheet/2/445/156120M173000-1715570.pdf)
 - 1 x Botón
 - 1 x Resistencia 10K
 - 1 x Capacitor 1uF
